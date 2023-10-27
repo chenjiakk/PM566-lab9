@@ -73,7 +73,7 @@ my_boot <- function(dat, stat, R, ncpus = 1L) {
   # EDIT THIS CODE:
   
   # Making the cluster using 'ncpus'
-  cl <- makePSOCKcluster(ncpus)
+  cl <- makeCluster(ncpus)
   
   # Preparing the cluster
   clusterSetRNGStream(cl, 123)
