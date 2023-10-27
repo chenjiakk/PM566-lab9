@@ -64,7 +64,7 @@ microbenchmark::microbenchmark(
 
 library(makePSOCKcluster)
 my_boot <- function(dat, stat, R, ncpus = 1L) {
-  r
+  
   # Getting the random indices
   n <- nrow(dat)
   idx <- matrix(sample.int(n, n*R, TRUE), nrow=n, ncol=R)
